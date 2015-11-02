@@ -1,0 +1,18 @@
+#!/bin/bash 
+
+echo "Searching: >>" $1 "<<"
+grep -Iirn \
+     --exclude-dir=.svn \
+     --exclude-dir=img \
+     --exclude-dir=images \
+     --exclude-dir=assets \
+     --exclude-dir=uploads \
+     --exclude-dir=om \
+     --exclude-dir=feeds \
+     --exclude-dir=spotlight \
+     --exclude-dir=pjc/pjc-tools/components \
+     --exclude-dir=pjc/scripts/yui \
+     --exclude-dir=cec/scripts/tiny-mce \
+     --exclude-dir=pjc/scripts/tiny-mce \
+     --exclude-dir=templates_c \
+     "$1" *

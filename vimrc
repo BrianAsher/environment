@@ -1,7 +1,21 @@
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+ 
+" " let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'octol/vim-cpp-enhanced-highlight'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+
 set history=700
 
-filetype plugin on
-filetype indent on
+filetype plugin indent on
 
 set number
 set encoding=utf-8
